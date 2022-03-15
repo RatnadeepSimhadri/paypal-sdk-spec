@@ -8,11 +8,11 @@
 <script src="https://www.paypal.com/sdk/js?client-id=MOCK_CLIENT_ID&components=legal"></script>
  
 <script>
-   paypal.Legal.render({
+   paypal.Legal({
       legalLocale: 'de_DE',
       buyerCountry: 'DE',
       fundingSource: paypal.FUNDING.PUI
-   }, '#paypal-legal-container');
+   }).render('#paypal-legal-container');
 
 </script>
 

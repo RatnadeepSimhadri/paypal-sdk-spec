@@ -9,8 +9,6 @@
  
 <script>
    paypal.Legal({
-      legalLocale: 'de_DE',
-      buyerCountry: 'DE',
       fundingSource: paypal.FUNDING.PUI
    }).render('#paypal-legal-container');
 

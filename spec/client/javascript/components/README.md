@@ -6,3 +6,4 @@
 - [Marks](./marks/README.md)
 - [Messages](./messages/README.md)
 - [AuthButton](./auth-button/README.md)
+- [Legal](./legal/README.md)

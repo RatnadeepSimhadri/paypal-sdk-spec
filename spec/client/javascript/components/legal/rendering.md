@@ -19,7 +19,7 @@
 ```
  
  # Render Legal Text For Errors 
-
+```html
  <div id="paypal-legal-container"></div>
  
 <script src="https://www.paypal.com/sdk/js?client-id=MOCK_CLIENT_ID&components=legal"></script>
@@ -31,3 +31,4 @@
       errorCode: paypal.ERROR_CODE.PAYMENT_SOURCE_INFO_CANNOT_BE_VERIFIED
    }).render('#paypal-legal-container');
 </script>
+```

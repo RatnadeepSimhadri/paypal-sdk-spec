@@ -2,6 +2,8 @@
 
 ## Vanilla Javascript / HTML 
 
+### Render Legal Text Juxtaposed to Buy Now Button 
+
 ```html 
 <div id="paypal-legal-container"></div>
  
@@ -16,3 +18,16 @@
 
 ```
  
+ # Render Legal Text For Errors 
+
+ <div id="paypal-legal-container"></div>
+ 
+<script src="https://www.paypal.com/sdk/js?client-id=MOCK_CLIENT_ID&components=legal"></script>
+ 
+<script>
+
+  paypal.Legal({
+      fundingSource: paypal.FUNDING.PUI, 
+      errorCode: paypal.ERROR_CODE.PAYMENT_SOURCE_INFO_CANNOT_BE_VERIFIED
+   }).render('#paypal-legal-container');
+</script>

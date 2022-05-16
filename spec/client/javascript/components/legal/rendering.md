@@ -11,7 +11,7 @@
  
 <script>
    paypal.Legal({
-      fundingSource: paypal.FUNDING.PAY_UPON_INVOICE
+      fundingSource: paypal.Legal.FUNDING.PAY_UPON_INVOICE
    }).render('#paypal-legal-container');
 
 </script>
@@ -27,7 +27,7 @@
 <script>
 
   paypal.Legal({
-      fundingSource: paypal.FUNDING.PAY_UPON_INVOICE, 
+      fundingSource: paypal.Legal.FUNDING.PAY_UPON_INVOICE, 
       errorCode: paypal.Legal.ERROR_CODE.PAYMENT_SOURCE_INFO_CANNOT_BE_VERIFIED
    }).render('#paypal-legal-container');
 </script>

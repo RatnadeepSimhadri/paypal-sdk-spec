@@ -7,3 +7,4 @@
 - [Messages](./messages/README.md)
 - [AuthButton](./auth-button/README.md)
 - [Applepay](./applepay/README.md)
+- [Googlepay](./googlepay/README.md)

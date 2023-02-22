@@ -243,18 +243,13 @@ function getGoogleDefaultShippingOptions() {
 
 async function processPayment(paymentData) {
 
-  const { id } = await googlePay.createOrder({
-    intent: "CAPTURE",
-    purchase_units: [
-      {
-        amount: {
-          currency_code: "USD",
-          value: "1.00",
-        },
-      },
-    ],
-  });
+  /**
+   *  Create Order on Merchant Server Side
+   */
 
+  const {id} = await fetch(`/orders`, {
+    method: "POST"
+  })
 
   /*
    * Approve
